@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prestige Theme Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Top Bar -->
+  <div class="hidden md:flex justify-between items-center px-6 py-2 border-b border-gray-200 text-sm text-gray-600">
+    <div>Free shipping on orders over $100</div>
+    <div class="flex space-x-6">
+      <a class="hover:text-gray-900" href="coming-soon.html" href="contact.html">Contact</a>
+      <a class="hover:text-gray-900" href="coming-soon.html" href="track-order.html">Track Order</a>
+      <a class="hover:text-gray-900" href="coming-soon.html" href="signin.html">Sign In</a>
+    </div>
+  </div>
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a class="text-3xl font-playfair font-bold tracking-wide text-gray-900" href="coming-soon.html">
+        <img alt="Prestige theme logo with elegant serif font" class="h-10 w-auto" height="40" src="https://storage.googleapis.com/a1aa/image/75360bea-ff5b-4165-b045-1cc3631bd6d9.jpg" width="150" />
+      </a>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex space-x-10 font-semibold text-gray-700">
+        <a class="hover:text-gray-900 transition" href="coming-soon.html" href="new-arrivals.html">New Arrivals</a>
+        <a class="hover:text-gray-900 transition" href="coming-soon.html" href="clothing.html">Clothing</a>
+        <a class="hover:text-gray-900 transition" href="coming-soon.html" href="accessories.html">Accessories</a>
+        <a class="hover:text-gray-900 transition" href="coming-soon.html" href="sale.html">Sale</a>
+        <a class="hover:text-gray-900 transition" href="coming-soon.html" href="journal.html">Journal</a>
+      </nav>
+      <!-- Icons -->
+      <div class="flex items-center space-x-6">
+        <button aria-label="Search" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+          <i class="fas fa-search fa-lg"></i>
+        </button>
+        <button aria-label="User Account" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+          <i class="fas fa-user fa-lg"></i>
+        </button>
+        <button aria-label="Wishlist" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+          <i class="fas fa-heart fa-lg"></i>
+        </button>
+        <button aria-label="Shopping Cart" class="relative text-gray-700 hover:text-gray-900 focus:outline-none">
+          <i class="fas fa-shopping-bag fa-lg"></i>
+          <span class="absolute -top-2 -right-2 bg-gray-900 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center font-semibold">3</span>
+        </button>
+      </div>
+      <!-- Mobile menu button -->
+      <button aria-label="Open menu" class="lg:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-button">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav aria-label="Mobile menu" class="hidden lg:hidden border-t border-gray-200 bg-white" id="mobile-menu">
+      <div class="px-6 py-4 space-y-4 font-semibold text-gray-700">
+        <a class="block hover:text-gray-900" href="coming-soon.html" href="new-arrivals.html">New Arrivals</a>
+        <a class="block hover:text-gray-900" href="coming-soon.html" href="clothing.html">Clothing</a>
+        <a class="block hover:text-gray-900" href="coming-soon.html" href="accessories.html">Accessories</a>
+        <a class="block hover:text-gray-900" href="coming-soon.html" href="sale.html">Sale</a>
+        <a class="block hover:text-gray-900" href="coming-soon.html" href="journal.html">Journal</a>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative max-w-7xl mx-auto px-6 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div class="lg:col-span-7 flex flex-col justify-center">
+        <h1 class="text-5xl md:text-6xl font-playfair font-bold leading-tight mb-6">
+          Discover the New Prestige Collection
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 max-w-xl">
+          Elevate your style with our latest curated selection of timeless pieces crafted with exquisite detail and premium materials.
+        </p>
+        <a class="inline-block bg-gray-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-gray-800 transition" href="coming-soon.html">
+          Shop Now
+        </a>
+      </div>
+      <div class="lg:col-span-5">
+        <img alt="Elegant woman wearing luxury clothing in studio lighting, showcasing premium fashion" class="w-full h-auto object-cover rounded-md shadow-lg" height="700" src="https://storage.googleapis.com/a1aa/image/91f5cfc9-c120-4304-234b-bc9837409d82.jpg" width="600" />
+      </div>
+    </div>
+  </section>
+  <!-- Featured Collections -->
+  <section class="max-w-7xl mx-auto px-6 mt-20">
+    <h2 class="text-4xl font-playfair font-bold mb-12 text-center">
+      Featured Collections
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a class="group block overflow-hidden rounded-md shadow-lg" href="coming-soon.html">
+        <img alt="Luxury leather handbags collection displayed on a minimalist white background" class="w-full h-[28rem] object-cover group-hover:scale-105 transition-transform duration-300" height="700" src="https://storage.googleapis.com/a1aa/image/534ef4c8-d4f2-44c0-186a-45d39fe8734c.jpg" width="600" />
+        <div class="mt-4 text-center">
+          <h3 class="text-2xl font-playfair font-semibold text-gray-900">
+            Leather Handbags
+          </h3>
+          <p class="text-gray-600 mt-1">
+            Timeless craftsmanship meets modern design.
+          </p>
+        </div>
+      </a>
+      <a class="group block overflow-hidden rounded-md shadow-lg" href="coming-soon.html">
+        <img alt="Elegant silk dresses collection displayed on a soft pastel background" class="w-full h-[28rem] object-cover group-hover:scale-105 transition-transform duration-300" height="700" src="https://storage.googleapis.com/a1aa/image/e9e3a1ab-feb4-4b24-e208-8e9de728d0b9.jpg" width="600" />
+        <div class="mt-4 text-center">
+          <h3 class="text-2xl font-playfair font-semibold text-gray-900">
+            Silk Dresses
+          </h3>
+          <p class="text-gray-600 mt-1">
+            Flowing silhouettes for every occasion.
+          </p>
+        </div>
+      </a>
+      <a class="group block overflow-hidden rounded-md shadow-lg" href="coming-soon.html">
+        <img alt="Modern jewelry collection with gold and silver pieces on a dark velvet background" class="w-full h-[28rem] object-cover group-hover:scale-105 transition-transform duration-300" height="700" src="https://storage.googleapis.com/a1aa/image/5b20948e-fdbb-4133-cdb4-3c68571ffe3c.jpg" width="600" />
+        <div class="mt-4 text-center">
+          <h3 class="text-2xl font-playfair font-semibold text-gray-900">
+            Jewelry
+          </h3>
+          <p class="text-gray-600 mt-1">
+            Statement pieces crafted to perfection.
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="max-w-7xl mx-auto px-6 mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl font-playfair font-bold mb-6">
+        Our Story
+      </h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        Prestige is a luxury fashion brand dedicated to timeless elegance and impeccable craftsmanship. Our collections are inspired by classic silhouettes and modern sophistication, designed for those who appreciate quality and style.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Every piece is carefully curated and crafted with the finest materials, ensuring that you not only look good but feel confident and empowered.
+      </p>
+    </div>
+    <div>
+      <img alt="Artisan crafting a luxury fashion piece in a workshop with natural light and wooden tools" class="w-full h-auto rounded-md shadow-lg object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/50d66609-36d2-4616-6eb1-fb9b455817eb.jpg" width="600" />
+    </div>
+  </section>
+  <!-- Featured Products -->
+  <section class="max-w-7xl mx-auto px-6 mt-24">
+    <h2 class="text-4xl font-playfair font-bold mb-12 text-center">
+      Featured Products
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <article class="group border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <a class="block overflow-hidden" href="product-detail.html">
+          <img alt="Classic black leather handbag with gold hardware on white background" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="500" src="https://storage.googleapis.com/a1aa/image/706a4bcd-5553-49ee-a9e0-de7548908884.jpg" width="400" />
+        </a>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">
+            Classic Black Handbag
+          </h3>
+          <p class="text-gray-600 mb-2">Leather</p>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-900 font-semibold">$350.00</span>
+            <button aria-label="Add Classic Black Handbag to cart" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="group border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <a class="block overflow-hidden" href="product-detail.html">
+          <img alt="Elegant silk evening dress in deep red color on mannequin" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="500" src="https://storage.googleapis.com/a1aa/image/f4758583-b0b4-4f80-8893-afdd8f200b91.jpg" width="400" />
+        </a>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">
+            Silk Evening Dress
+          </h3>
+          <p class="text-gray-600 mb-2">Silk</p>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-900 font-semibold">$480.00</span>
+            <button aria-label="Add Silk Evening Dress to cart" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="group border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <a class="block overflow-hidden" href="product-detail.html">
+          <img alt="Gold minimalist necklace on black velvet background" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="500" src="https://storage.googleapis.com/a1aa/image/8426fcea-d860-4fa8-ab3b-27435030e1f9.jpg" width="400" />
+        </a>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">
+            Gold Minimalist Necklace
+          </h3>
+          <p class="text-gray-600 mb-2">Jewelry</p>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-900 font-semibold">$220.00</span>
+            <button aria-label="Add Gold Minimalist Necklace to cart" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="group border border-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <a class="block overflow-hidden" href="product-detail.html">
+          <img alt="Silk scarf with floral pattern draped elegantly on white background" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="500" src="https://storage.googleapis.com/a1aa/image/e128c6da-24d2-47d9-d2ff-c8a056f474ba.jpg" width="400" />
+        </a>
+        <div class="p-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">
+            Floral Silk Scarf
+          </h3>
+          <p class="text-gray-600 mb-2" href="accessories.html">Accessories</p>
+          <div class="flex items-center justify-between">
+            <span class="text-gray-900 font-semibold">$130.00</span>
+            <button aria-label="Add Floral Silk Scarf to cart" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Newsletter Section -->
+  <section class="max-w-7xl mx-auto px-6 mt-24 bg-gray-50 py-16 rounded-md shadow-md">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-playfair font-bold mb-6">
+        Stay in the Loop
+      </h2>
+      <p class="text-gray-700 mb-8">
+        Subscribe to our newsletter for exclusive offers, new arrivals, and style inspiration.
+      </p>
+      <form class="flex flex-col sm:flex-row justify-center gap-4">
+        <input aria-label="Email address" class="w-full sm:w-auto flex-grow px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900" placeholder="Enter your email" required type="email" />
+        <button class="bg-gray-900 text-white px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 mt-24">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+      <div>
+        <h3 class="text-xl font-playfair font-semibold mb-6 text-white">
+          Customer Service
+        </h3>
+        <ul class="space-y-3 text-sm">
+          <li><a class="hover:text-white" href="coming-soon.html" href="contact.html">Contact Us</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="shipping-returns.html">Shipping & Returns</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="faq.html">FAQ</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="size-guide.html">Size Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-playfair font-semibold mb-6 text-white">
+          About Prestige
+        </h3>
+        <ul class="space-y-3 text-sm">
+          <li><a class="hover:text-white" href="coming-soon.html" href="about.html">Our Story</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="sustainability.html">Sustainability</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="careers.html">Careers</a></li>
+          <li><a class="hover:text-white" href="coming-soon.html" href="press.html">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-playfair font-semibold mb-6 text-white">
+          Follow Us
+        </h3>
+        <div class="flex space-x-6 text-lg">
+          <a aria-label="Facebook" class="hover:text-white" href="coming-soon.html"><i class="fab fa-facebook-f"></i></a>
+          <a aria-label="Instagram" class="hover:text-white" href="coming-soon.html"><i class="fab fa-instagram"></i></a>
+          <a aria-label="Pinterest" class="hover:text-white" href="coming-soon.html"><i class="fab fa-pinterest-p"></i></a>
+          <a aria-label="Twitter" class="hover:text-white" href="coming-soon.html"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl font-playfair font-semibold mb-6 text-white">
+          Newsletter
+        </h3>
+        <p class="text-sm mb-4">
+          Sign up for our newsletter to get the latest on sales, new releases and more.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4">
+          <input aria-label="Email address" class="px-4 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900" placeholder="Your email" required type="email" />
+          <button class="bg-gray-700 text-white px-6 py-2 rounded-md font-semibold hover:bg-gray-600 transition" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 text-center py-6 text-sm text-gray-500">
+      © 2024 Prestige. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+<script>
+  // Toggle mobile menu
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Alert for Add to Cart buttons
+  document.querySelectorAll('[aria-label^="Add"]').forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Added to cart!');
+    });
+  });
+
+  // Simulate newsletter form submissions
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for subscribing!');
+    });
+  });
+
+  // Redirect buttons
+  document.querySelectorAll('[aria-label="User Account"]').forEach(btn => {
+    btn.addEventListener('click', () => window.location.href = 'account.html');
+  });
+  document.querySelectorAll('[aria-label="Wishlist"]').forEach(btn => {
+    btn.addEventListener('click', () => window.location.href = 'wishlist.html');
+  });
+  document.querySelectorAll('[aria-label="Shopping Cart"]').forEach(btn => {
+    btn.addEventListener('click', () => window.location.href = 'cart.html');
+  });
+</script>
+
+</body>
+</html>
